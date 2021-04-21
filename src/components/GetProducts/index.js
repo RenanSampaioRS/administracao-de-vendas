@@ -111,7 +111,7 @@ const GetProducts = () => {
                 <b style={{ backgroundColor: "#1a1727", padding: "1px 2px" }}>
                   {orders.filter((ord) => ord.idUser === filt.id).length}
                 </b>{" "}
-                clientes
+                cliente(s)
               </div>
               <div>
                 <AddCircleIcon

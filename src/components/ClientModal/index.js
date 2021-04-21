@@ -55,6 +55,12 @@ const ClientModal = ({ handleClose, open, productId }) => {
 
     let minutes = newDate.getMinutes();
 
+    let day = newDate.getDate();
+
+    if (day < 10) {
+      day = `0${newDate.getDate()}`;
+    }
+
     if (month < 10) {
       month = `0${newDate.getMonth() + 1}`;
     }
@@ -63,7 +69,7 @@ const ClientModal = ({ handleClose, open, productId }) => {
       minutes = `0${newDate.getMinutes()}`;
     }
 
-    return `${newDate.getDate()}/${month}/${newDate.getFullYear()} ${newDate.getHours()}h:${minutes}min`;
+    return `${day}/${month}/${newDate.getFullYear()} ${newDate.getHours()}h:${minutes}min`;
   };
 
   function compare(a, b) {

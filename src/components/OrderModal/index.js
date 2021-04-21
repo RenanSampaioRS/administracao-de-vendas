@@ -77,6 +77,24 @@ const OrderModal = ({ handleClose, open, productId }) => {
     reset();
   };
 
+  const convertDate = () => {
+    let newDate = new Date();
+
+    let month = newDate.getMonth() + 1;
+
+    let minutes = newDate.getMinutes();
+
+    if (month < 10) {
+      month = `0${newDate.getMonth() + 1}`;
+    }
+
+    if (minutes < 10) {
+      minutes = `0${newDate.getMinutes()}`;
+    }
+
+    return `${newDate.getFullYear()}-${month}-${newDate.getDate()}T${newDate.getHours()}:${minutes}`;
+  };
+
   return (
     <div>
       <Modal
@@ -106,6 +124,7 @@ const OrderModal = ({ handleClose, open, productId }) => {
               <TextField
                 style={{ margin: "0px 0px 20px 0px" }}
                 label="Data de expiração do pedido"
+                defaultValue={convertDate()}
                 type="datetime-local"
                 InputLabelProps={{
                   shrink: true,
