@@ -1,0 +1,28 @@
+.prodRight {
+  border: 1px solid black;
+  width: 50vw;
+  background-color: #8e5e5b;
+  color: #eed7d5;
+}
+
+/* background-color: #8e5e5b;
+  display: flex;
+  //#EED7D5
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #eed7d5;
+  /* color: #657c93; */
+/* color: #aaaaaa; */
+/* color: #1a1727; */
+
+.prodRight-filtered {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0px;
+}
+
+.prodRight-filtered_card {
+  border: 1px solid black;
+  margin: 10px 10px;
+}

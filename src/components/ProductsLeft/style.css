@@ -1,0 +1,19 @@
+.prodLeft {
+  border: 1px solid #1a1727;
+  width: 50vw;
+  background-color: #8e5e5b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #eed7d5;
+  /* color: #657c93; */
+  /* color: #aaaaaa; */
+  /* color: #1a1727; */
+}
+
+.prodLeft-card {
+  border: 2px solid #1a1727;
+  margin: 10px 10px;
+  border-radius: 4%;
+  padding: 0px 10px 5px 10px;
+}

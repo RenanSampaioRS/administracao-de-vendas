@@ -1,0 +1,14 @@
+.client-card {
+  border: 1px solid black;
+  margin: 0px 0px 15px 0px;
+  padding: 10px 10px;
+}
+
+/* background-color: #8e5e5b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: #eed7d5;
+  /* color: #657c93; */
+/* color: #aaaaaa; */
+/* color: #1a1727; */
